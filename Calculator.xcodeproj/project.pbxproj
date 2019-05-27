@@ -1,0 +1,1113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43456FC72308D1C600DFA21A /* OperandLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43456FC62308D1C600DFA21A /* OperandLocalizer.m */; };
+		43456FCC2308D25000DFA21A /* OperandStringValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 43456FCB2308D25000DFA21A /* OperandStringValues.m */; };
+		43B1A11E229C9C400038F9EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A11D229C9C400038F9EB /* AppDelegate.m */; };
+		43B1A121229C9C400038F9EB /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A120229C9C400038F9EB /* CalculatorViewController.m */; };
+		43B1A126229C9C410038F9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B1A125229C9C410038F9EB /* Assets.xcassets */; };
+		43B1A129229C9C410038F9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B1A127229C9C410038F9EB /* LaunchScreen.storyboard */; };
+		43B1A12C229C9C410038F9EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A12B229C9C410038F9EB /* main.m */; };
+		43B1A149229C9D1B0038F9EB /* ConcreteCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A148229C9D1B0038F9EB /* ConcreteCalculator.m */; };
+		43B1A14C229CAB970038F9EB /* ConcreteCalculatorAdditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A14B229CAB970038F9EB /* ConcreteCalculatorAdditionTests.m */; };
+		43B1A154229E3E040038F9EB /* ConcreteCalculatorAbstractTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A153229E3E040038F9EB /* ConcreteCalculatorAbstractTests.m */; };
+		43B1A15622A2F4B10038F9EB /* ConcreteCalculatorNegationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A15522A2F4B10038F9EB /* ConcreteCalculatorNegationTests.m */; };
+		43B1A15B22A2FB3A0038F9EB /* ConcreteCalculatorEqualsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A15A22A2FB3A0038F9EB /* ConcreteCalculatorEqualsTests.m */; };
+		43B1A15D22A2FBEA0038F9EB /* ConcreteCalculatorNumberEntryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A15C22A2FBEA0038F9EB /* ConcreteCalculatorNumberEntryTests.m */; };
+		43B1A15F22A2FD930038F9EB /* ConcreteCalculatorDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A15E22A2FD930038F9EB /* ConcreteCalculatorDisplayTests.m */; };
+		43B1A16122A2FE370038F9EB /* ConcreteCalculatorDecimalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16022A2FE370038F9EB /* ConcreteCalculatorDecimalTests.m */; };
+		43B1A16322A2FE4D0038F9EB /* ConcreteCalculatorClearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16222A2FE4D0038F9EB /* ConcreteCalculatorClearTests.m */; };
+		43B1A16522A2FF300038F9EB /* ConcreteCalculatorSubtractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16422A2FF300038F9EB /* ConcreteCalculatorSubtractionTests.m */; };
+		43B1A16722A2FF410038F9EB /* ConcreteCalculatorMultiplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16622A2FF410038F9EB /* ConcreteCalculatorMultiplicationTests.m */; };
+		43B1A16922A2FF500038F9EB /* ConcreteCalculatorDivisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16822A2FF500038F9EB /* ConcreteCalculatorDivisionTests.m */; };
+		43B1A17022A314580038F9EB /* Operand.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A16F22A314580038F9EB /* Operand.m */; };
+		43B1A17622A4740E0038F9EB /* ConcreteCalculatorTestConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A17522A4740E0038F9EB /* ConcreteCalculatorTestConstants.m */; };
+		43B1A17A22A4874F0038F9EB /* CalculatorInputFeeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A17922A4874F0038F9EB /* CalculatorInputFeeder.m */; };
+		43B1A1AE22AE2AD70038F9EB /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1AD22AE2AD60038F9EB /* GridView.m */; };
+		43B1A1B122AE38F60038F9EB /* GridViewConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1B022AE38F60038F9EB /* GridViewConstraintFactory.m */; };
+		43B1A1C322B622A90038F9EB /* ConcreteButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1C222B622A90038F9EB /* ConcreteButtonView.m */; };
+		43B1A1CE22B62BAD0038F9EB /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1CD22B62BAD0038F9EB /* DisplayView.m */; };
+		43B1A1D022B62C3F0038F9EB /* ButtonPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1B322B60D540038F9EB /* ButtonPadView.m */; };
+		43B1A1D622B6D8250038F9EB /* ConcreteButtonPadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1D522B6D8250038F9EB /* ConcreteButtonPadViewModel.m */; };
+		43B1A1DC22B6EA990038F9EB /* ButtonPadGridConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1DB22B6EA990038F9EB /* ButtonPadGridConfiguration.m */; };
+		43B1A1E122B6EEA80038F9EB /* ConcreteButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1E022B6EEA80038F9EB /* ConcreteButtonViewModel.m */; };
+		43B1A1E822B6F4860038F9EB /* ConcreteDisplayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1E722B6F4860038F9EB /* ConcreteDisplayViewModel.m */; };
+		43B1A1EF22BA01120038F9EB /* UIView+CalculatorViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1EE22BA01120038F9EB /* UIView+CalculatorViewAdditions.m */; };
+		43B1A1F222BA04E60038F9EB /* GridViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1F122BA04E60038F9EB /* GridViewConstraint.m */; };
+		43B1A1F522C044930038F9EB /* ButtonViewModelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A1F422C044930038F9EB /* ButtonViewModelStyle.m */; };
+		43B1A20222C0521C0038F9EB /* ConcreteCalculatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A20122C0521C0038F9EB /* ConcreteCalculatorViewModel.m */; };
+		43B1A20622C05ED50038F9EB /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A20522C05ED50038F9EB /* CalculatorView.m */; };
+		43B1A21122CC53C00038F9EB /* ConcreteCalculatorViewTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A21022CC53C00038F9EB /* ConcreteCalculatorViewTheme.m */; };
+		43B1A21622CC58560038F9EB /* ConcreteDisplayViewTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A21522CC58560038F9EB /* ConcreteDisplayViewTheme.m */; };
+		43B1A21922CC58B20038F9EB /* ConcreteButtonPadViewTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A21822CC58B20038F9EB /* ConcreteButtonPadViewTheme.m */; };
+		43B1A24C22CC6C6F0038F9EB /* ConcreteButtonViewTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A24B22CC6C6F0038F9EB /* ConcreteButtonViewTheme.m */; };
+		43B1A25522CEA2490038F9EB /* HighlightingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A25422CEA2490038F9EB /* HighlightingButton.m */; };
+		43B1A26022CEB9630038F9EB /* ConcreteButtonViewThemeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A25F22CEB9630038F9EB /* ConcreteButtonViewThemeProvider.m */; };
+		43B1A26522CEC0A10038F9EB /* ConcreteButtonPadViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A26422CEC0A10038F9EB /* ConcreteButtonPadViewModelTests.m */; };
+		43B1A26822CEC1120038F9EB /* MockCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A26722CEC1120038F9EB /* MockCalculator.m */; };
+		43B1A26B22CEC9B20038F9EB /* ExpectationTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A26A22CEC9B10038F9EB /* ExpectationTable.m */; };
+		43B1A27122CECE930038F9EB /* ExpectationTableKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A27022CECE930038F9EB /* ExpectationTableKey.m */; };
+		43B1A27622CED1AC0038F9EB /* ObjectCommunicationTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A27522CED1AC0038F9EB /* ObjectCommunicationTester.m */; };
+		43B1A27A22CF10350038F9EB /* ConcreteCalculatorMultiOperatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A27922CF10350038F9EB /* ConcreteCalculatorMultiOperatorTests.m */; };
+		43B1A27D22CF18540038F9EB /* LoggingCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A27C22CF18540038F9EB /* LoggingCalculator.m */; };
+		43B1A28222D282E00038F9EB /* DisplayText.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A28122D282E00038F9EB /* DisplayText.m */; };
+		43B1A28522D286F50038F9EB /* ExpressionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A28422D286F50038F9EB /* ExpressionEvaluator.m */; };
+		43B1A28922D2B8390038F9EB /* NSString+CalculatorTestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A28822D2B8390038F9EB /* NSString+CalculatorTestAdditions.m */; };
+		43B1A29322D456C30038F9EB /* NSDecimalNumber+OperandAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B1A29222D456C30038F9EB /* NSDecimalNumber+OperandAdditions.m */; };
+		43F1BC8922D5A7A600C6CED5 /* ConcreteCalculatorUSEnglishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F1BC8822D5A7A600C6CED5 /* ConcreteCalculatorUSEnglishTests.m */; };
+		43F1BC8C22D5A83D00C6CED5 /* ConcreteCalculatorFranceFrenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F1BC8B22D5A83D00C6CED5 /* ConcreteCalculatorFranceFrenchTests.m */; };
+		43F1BC8F22DAA4DB00C6CED5 /* CalculatorExpectationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F1BC8E22DAA4DB00C6CED5 /* CalculatorExpectationFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43B1A132229C9C410038F9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B1A111229C9C400038F9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B1A118229C9C400038F9EB;
+			remoteInfo = Calculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43456FC52308D1C600DFA21A /* OperandLocalizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperandLocalizer.h; sourceTree = "<group>"; };
+		43456FC62308D1C600DFA21A /* OperandLocalizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperandLocalizer.m; sourceTree = "<group>"; };
+		43456FCA2308D25000DFA21A /* OperandStringValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperandStringValues.h; sourceTree = "<group>"; };
+		43456FCB2308D25000DFA21A /* OperandStringValues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperandStringValues.m; sourceTree = "<group>"; };
+		43733F1C22F7F0F500AEF4AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43B1A119229C9C400038F9EB /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B1A11C229C9C400038F9EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43B1A11D229C9C400038F9EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43B1A11F229C9C400038F9EB /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		43B1A120229C9C400038F9EB /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		43B1A125229C9C410038F9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43B1A128229C9C410038F9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43B1A12A229C9C410038F9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B1A12B229C9C410038F9EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43B1A131229C9C410038F9EB /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B1A137229C9C410038F9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B1A140229C9C6C0038F9EB /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		43B1A147229C9D1B0038F9EB /* ConcreteCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCalculator.h; sourceTree = "<group>"; };
+		43B1A148229C9D1B0038F9EB /* ConcreteCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculator.m; sourceTree = "<group>"; };
+		43B1A14B229CAB970038F9EB /* ConcreteCalculatorAdditionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorAdditionTests.m; sourceTree = "<group>"; };
+		43B1A152229E3E040038F9EB /* ConcreteCalculatorAbstractTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCalculatorAbstractTests.h; sourceTree = "<group>"; };
+		43B1A153229E3E040038F9EB /* ConcreteCalculatorAbstractTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorAbstractTests.m; sourceTree = "<group>"; };
+		43B1A15522A2F4B10038F9EB /* ConcreteCalculatorNegationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorNegationTests.m; sourceTree = "<group>"; };
+		43B1A15A22A2FB3A0038F9EB /* ConcreteCalculatorEqualsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorEqualsTests.m; sourceTree = "<group>"; };
+		43B1A15C22A2FBEA0038F9EB /* ConcreteCalculatorNumberEntryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorNumberEntryTests.m; sourceTree = "<group>"; };
+		43B1A15E22A2FD930038F9EB /* ConcreteCalculatorDisplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorDisplayTests.m; sourceTree = "<group>"; };
+		43B1A16022A2FE370038F9EB /* ConcreteCalculatorDecimalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorDecimalTests.m; sourceTree = "<group>"; };
+		43B1A16222A2FE4D0038F9EB /* ConcreteCalculatorClearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorClearTests.m; sourceTree = "<group>"; };
+		43B1A16422A2FF300038F9EB /* ConcreteCalculatorSubtractionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorSubtractionTests.m; sourceTree = "<group>"; };
+		43B1A16622A2FF410038F9EB /* ConcreteCalculatorMultiplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorMultiplicationTests.m; sourceTree = "<group>"; };
+		43B1A16822A2FF500038F9EB /* ConcreteCalculatorDivisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorDivisionTests.m; sourceTree = "<group>"; };
+		43B1A16E22A314580038F9EB /* Operand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operand.h; sourceTree = "<group>"; };
+		43B1A16F22A314580038F9EB /* Operand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operand.m; sourceTree = "<group>"; };
+		43B1A17422A4740E0038F9EB /* ConcreteCalculatorTestConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCalculatorTestConstants.h; sourceTree = "<group>"; };
+		43B1A17522A4740E0038F9EB /* ConcreteCalculatorTestConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorTestConstants.m; sourceTree = "<group>"; };
+		43B1A17822A4874F0038F9EB /* CalculatorInputFeeder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorInputFeeder.h; sourceTree = "<group>"; };
+		43B1A17922A4874F0038F9EB /* CalculatorInputFeeder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorInputFeeder.m; sourceTree = "<group>"; };
+		43B1A1AC22AE2AD60038F9EB /* GridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		43B1A1AD22AE2AD60038F9EB /* GridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
+		43B1A1AF22AE38F60038F9EB /* GridViewConstraintFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewConstraintFactory.h; sourceTree = "<group>"; };
+		43B1A1B022AE38F60038F9EB /* GridViewConstraintFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewConstraintFactory.m; sourceTree = "<group>"; };
+		43B1A1B222B60D540038F9EB /* ButtonPadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonPadView.h; sourceTree = "<group>"; };
+		43B1A1B322B60D540038F9EB /* ButtonPadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonPadView.m; sourceTree = "<group>"; };
+		43B1A1C122B622A90038F9EB /* ConcreteButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonView.h; sourceTree = "<group>"; };
+		43B1A1C222B622A90038F9EB /* ConcreteButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonView.m; sourceTree = "<group>"; };
+		43B1A1C422B627460038F9EB /* GridViewConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewConfiguration.h; sourceTree = "<group>"; };
+		43B1A1CC22B62BAD0038F9EB /* DisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		43B1A1CD22B62BAD0038F9EB /* DisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
+		43B1A1D222B6D6F60038F9EB /* ButtonPadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonPadViewModel.h; sourceTree = "<group>"; };
+		43B1A1D322B6D7040038F9EB /* ButtonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewModel.h; sourceTree = "<group>"; };
+		43B1A1D422B6D8250038F9EB /* ConcreteButtonPadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonPadViewModel.h; sourceTree = "<group>"; };
+		43B1A1D522B6D8250038F9EB /* ConcreteButtonPadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonPadViewModel.m; sourceTree = "<group>"; };
+		43B1A1DA22B6EA990038F9EB /* ButtonPadGridConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonPadGridConfiguration.h; sourceTree = "<group>"; };
+		43B1A1DB22B6EA990038F9EB /* ButtonPadGridConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonPadGridConfiguration.m; sourceTree = "<group>"; };
+		43B1A1DF22B6EEA80038F9EB /* ConcreteButtonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonViewModel.h; sourceTree = "<group>"; };
+		43B1A1E022B6EEA80038F9EB /* ConcreteButtonViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonViewModel.m; sourceTree = "<group>"; };
+		43B1A1E522B6F45F0038F9EB /* DisplayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewModel.h; sourceTree = "<group>"; };
+		43B1A1E622B6F4860038F9EB /* ConcreteDisplayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteDisplayViewModel.h; sourceTree = "<group>"; };
+		43B1A1E722B6F4860038F9EB /* ConcreteDisplayViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteDisplayViewModel.m; sourceTree = "<group>"; };
+		43B1A1ED22BA01120038F9EB /* UIView+CalculatorViewAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CalculatorViewAdditions.h"; sourceTree = "<group>"; };
+		43B1A1EE22BA01120038F9EB /* UIView+CalculatorViewAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CalculatorViewAdditions.m"; sourceTree = "<group>"; };
+		43B1A1F022BA04E60038F9EB /* GridViewConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewConstraint.h; sourceTree = "<group>"; };
+		43B1A1F122BA04E60038F9EB /* GridViewConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewConstraint.m; sourceTree = "<group>"; };
+		43B1A1F322C044930038F9EB /* ButtonViewModelStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewModelStyle.h; sourceTree = "<group>"; };
+		43B1A1F422C044930038F9EB /* ButtonViewModelStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewModelStyle.m; sourceTree = "<group>"; };
+		43B1A1FF22C0518F0038F9EB /* CalculatorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewModel.h; sourceTree = "<group>"; };
+		43B1A20022C0521C0038F9EB /* ConcreteCalculatorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCalculatorViewModel.h; sourceTree = "<group>"; };
+		43B1A20122C0521C0038F9EB /* ConcreteCalculatorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorViewModel.m; sourceTree = "<group>"; };
+		43B1A20422C05ED50038F9EB /* CalculatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
+		43B1A20522C05ED50038F9EB /* CalculatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
+		43B1A20822C1BFAA0038F9EB /* ButtonViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewTheme.h; sourceTree = "<group>"; };
+		43B1A20D22C9576C0038F9EB /* ButtonPadViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonPadViewTheme.h; sourceTree = "<group>"; };
+		43B1A20E22C96B680038F9EB /* DisplayViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewTheme.h; sourceTree = "<group>"; };
+		43B1A20F22CC53C00038F9EB /* ConcreteCalculatorViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCalculatorViewTheme.h; sourceTree = "<group>"; };
+		43B1A21022CC53C00038F9EB /* ConcreteCalculatorViewTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorViewTheme.m; sourceTree = "<group>"; };
+		43B1A21222CC53E30038F9EB /* CalculatorViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewTheme.h; sourceTree = "<group>"; };
+		43B1A21422CC58560038F9EB /* ConcreteDisplayViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteDisplayViewTheme.h; sourceTree = "<group>"; };
+		43B1A21522CC58560038F9EB /* ConcreteDisplayViewTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteDisplayViewTheme.m; sourceTree = "<group>"; };
+		43B1A21722CC58B20038F9EB /* ConcreteButtonPadViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonPadViewTheme.h; sourceTree = "<group>"; };
+		43B1A21822CC58B20038F9EB /* ConcreteButtonPadViewTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonPadViewTheme.m; sourceTree = "<group>"; };
+		43B1A24A22CC6C6F0038F9EB /* ConcreteButtonViewTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonViewTheme.h; sourceTree = "<group>"; };
+		43B1A24B22CC6C6F0038F9EB /* ConcreteButtonViewTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonViewTheme.m; sourceTree = "<group>"; };
+		43B1A25022CE90610038F9EB /* FloatComparison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatComparison.h; sourceTree = "<group>"; };
+		43B1A25322CEA2490038F9EB /* HighlightingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighlightingButton.h; sourceTree = "<group>"; };
+		43B1A25422CEA2490038F9EB /* HighlightingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighlightingButton.m; sourceTree = "<group>"; };
+		43B1A25822CEADE10038F9EB /* ButtonViewThemeProviding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewThemeProviding.h; sourceTree = "<group>"; };
+		43B1A25E22CEB9630038F9EB /* ConcreteButtonViewThemeProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonViewThemeProvider.h; sourceTree = "<group>"; };
+		43B1A25F22CEB9630038F9EB /* ConcreteButtonViewThemeProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonViewThemeProvider.m; sourceTree = "<group>"; };
+		43B1A26422CEC0A10038F9EB /* ConcreteButtonPadViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonPadViewModelTests.m; sourceTree = "<group>"; };
+		43B1A26622CEC1120038F9EB /* MockCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockCalculator.h; sourceTree = "<group>"; };
+		43B1A26722CEC1120038F9EB /* MockCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockCalculator.m; sourceTree = "<group>"; };
+		43B1A26922CEC9B10038F9EB /* ExpectationTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectationTable.h; sourceTree = "<group>"; };
+		43B1A26A22CEC9B10038F9EB /* ExpectationTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpectationTable.m; sourceTree = "<group>"; };
+		43B1A26F22CECE930038F9EB /* ExpectationTableKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectationTableKey.h; sourceTree = "<group>"; };
+		43B1A27022CECE930038F9EB /* ExpectationTableKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpectationTableKey.m; sourceTree = "<group>"; };
+		43B1A27422CED1AC0038F9EB /* ObjectCommunicationTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectCommunicationTester.h; sourceTree = "<group>"; };
+		43B1A27522CED1AC0038F9EB /* ObjectCommunicationTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectCommunicationTester.m; sourceTree = "<group>"; };
+		43B1A27922CF10350038F9EB /* ConcreteCalculatorMultiOperatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorMultiOperatorTests.m; sourceTree = "<group>"; };
+		43B1A27B22CF18540038F9EB /* LoggingCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggingCalculator.h; sourceTree = "<group>"; };
+		43B1A27C22CF18540038F9EB /* LoggingCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggingCalculator.m; sourceTree = "<group>"; };
+		43B1A27F22D1715B0038F9EB /* Equality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Equality.h; sourceTree = "<group>"; };
+		43B1A28022D282E00038F9EB /* DisplayText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayText.h; sourceTree = "<group>"; };
+		43B1A28122D282E00038F9EB /* DisplayText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayText.m; sourceTree = "<group>"; };
+		43B1A28322D286F50038F9EB /* ExpressionEvaluator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionEvaluator.h; sourceTree = "<group>"; };
+		43B1A28422D286F50038F9EB /* ExpressionEvaluator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpressionEvaluator.m; sourceTree = "<group>"; };
+		43B1A28722D2B8390038F9EB /* NSString+CalculatorTestAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculatorTestAdditions.h"; sourceTree = "<group>"; };
+		43B1A28822D2B8390038F9EB /* NSString+CalculatorTestAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculatorTestAdditions.m"; sourceTree = "<group>"; };
+		43B1A29122D456C30038F9EB /* NSDecimalNumber+OperandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+OperandAdditions.h"; sourceTree = "<group>"; };
+		43B1A29222D456C30038F9EB /* NSDecimalNumber+OperandAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+OperandAdditions.m"; sourceTree = "<group>"; };
+		43F1BC8822D5A7A600C6CED5 /* ConcreteCalculatorUSEnglishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorUSEnglishTests.m; sourceTree = "<group>"; };
+		43F1BC8B22D5A83D00C6CED5 /* ConcreteCalculatorFranceFrenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCalculatorFranceFrenchTests.m; sourceTree = "<group>"; };
+		43F1BC8D22DAA4DB00C6CED5 /* CalculatorExpectationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorExpectationFactory.h; sourceTree = "<group>"; };
+		43F1BC8E22DAA4DB00C6CED5 /* CalculatorExpectationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorExpectationFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B1A116229C9C400038F9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B1A12E229C9C410038F9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43456FC82308D1CF00DFA21A /* Display Text */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A28022D282E00038F9EB /* DisplayText.h */,
+				43B1A28122D282E00038F9EB /* DisplayText.m */,
+				43456FC92308D1D800DFA21A /* Private Helper Classes */,
+			);
+			path = "Display Text";
+			sourceTree = "<group>";
+		};
+		43456FC92308D1D800DFA21A /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43456FC52308D1C600DFA21A /* OperandLocalizer.h */,
+				43456FC62308D1C600DFA21A /* OperandLocalizer.m */,
+				43456FCA2308D25000DFA21A /* OperandStringValues.h */,
+				43456FCB2308D25000DFA21A /* OperandStringValues.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A110229C9C400038F9EB = {
+			isa = PBXGroup;
+			children = (
+				43733F1C22F7F0F500AEF4AB /* README.md */,
+				43B1A11B229C9C400038F9EB /* Calculator */,
+				43B1A134229C9C410038F9EB /* CalculatorTests */,
+				43B1A11A229C9C400038F9EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B1A11A229C9C400038F9EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A119229C9C400038F9EB /* Calculator.app */,
+				43B1A131229C9C410038F9EB /* CalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B1A11B229C9C400038F9EB /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1C922B629290038F9EB /* View Layer */,
+				43B1A1DE22B6ED2D0038F9EB /* View Model Layer */,
+				43B1A17222A367E80038F9EB /* Model Layer */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		43B1A134229C9C410038F9EB /* CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A26322CEC08E0038F9EB /* View Model Layer Tests */,
+				43B1A16A22A2FF570038F9EB /* Model Layer Tests */,
+				43B1A27322CED0E50038F9EB /* Shared Infrastructure */,
+				43B1A28A22D2B83D0038F9EB /* Categories */,
+				43B1A26122CEC0720038F9EB /* Supporting Files */,
+			);
+			path = CalculatorTests;
+			sourceTree = "<group>";
+		};
+		43B1A16A22A2FF570038F9EB /* Model Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A26222CEC0840038F9EB /* Concrete Calculator Tests */,
+			);
+			path = "Model Layer Tests";
+			sourceTree = "<group>";
+		};
+		43B1A16C22A2FF9B0038F9EB /* Abstract Test Superclass */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A152229E3E040038F9EB /* ConcreteCalculatorAbstractTests.h */,
+				43B1A153229E3E040038F9EB /* ConcreteCalculatorAbstractTests.m */,
+				43B1A17722A483240038F9EB /* Helper Objects */,
+			);
+			path = "Abstract Test Superclass";
+			sourceTree = "<group>";
+		};
+		43B1A16D22A2FFA50038F9EB /* Concrete Test Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				43F1BC8A22D5A7F500C6CED5 /* Display Tests */,
+				43F1BC9022E4FB0300C6CED5 /* Math Tests */,
+				43F1BC9122E4FB1600C6CED5 /* Other Tests */,
+			);
+			path = "Concrete Test Subclasses";
+			sourceTree = "<group>";
+		};
+		43B1A17122A367D10038F9EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A11C229C9C400038F9EB /* AppDelegate.h */,
+				43B1A11D229C9C400038F9EB /* AppDelegate.m */,
+				43B1A125229C9C410038F9EB /* Assets.xcassets */,
+				43B1A127229C9C410038F9EB /* LaunchScreen.storyboard */,
+				43B1A12A229C9C410038F9EB /* Info.plist */,
+				43B1A12B229C9C410038F9EB /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B1A17222A367E80038F9EB /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1FB22C050A70038F9EB /* Protocols */,
+				43B1A1FC22C050C70038F9EB /* Concrete Implementations */,
+				43B1A28622D2B80B0038F9EB /* Utility */,
+			);
+			path = "Model Layer";
+			sourceTree = "<group>";
+		};
+		43B1A17322A367F70038F9EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1FF22C0518F0038F9EB /* CalculatorViewModel.h */,
+				43B1A1E522B6F45F0038F9EB /* DisplayViewModel.h */,
+				43B1A1D222B6D6F60038F9EB /* ButtonPadViewModel.h */,
+				43B1A1F622C044FD0038F9EB /* Button View Model */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		43B1A17722A483240038F9EB /* Helper Objects */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A17422A4740E0038F9EB /* ConcreteCalculatorTestConstants.h */,
+				43B1A17522A4740E0038F9EB /* ConcreteCalculatorTestConstants.m */,
+				43B1A17822A4874F0038F9EB /* CalculatorInputFeeder.h */,
+				43B1A17922A4874F0038F9EB /* CalculatorInputFeeder.m */,
+				43F1BC8D22DAA4DB00C6CED5 /* CalculatorExpectationFactory.h */,
+				43F1BC8E22DAA4DB00C6CED5 /* CalculatorExpectationFactory.m */,
+			);
+			path = "Helper Objects";
+			sourceTree = "<group>";
+		};
+		43B1A1C522B6278E0038F9EB /* Grid View */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1AC22AE2AD60038F9EB /* GridView.h */,
+				43B1A1AD22AE2AD60038F9EB /* GridView.m */,
+				43B1A1C422B627460038F9EB /* GridViewConfiguration.h */,
+				43B1A1C622B627A00038F9EB /* Private Helper Classes */,
+			);
+			path = "Grid View";
+			sourceTree = "<group>";
+		};
+		43B1A1C622B627A00038F9EB /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1AF22AE38F60038F9EB /* GridViewConstraintFactory.h */,
+				43B1A1B022AE38F60038F9EB /* GridViewConstraintFactory.m */,
+				43B1A1F022BA04E60038F9EB /* GridViewConstraint.h */,
+				43B1A1F122BA04E60038F9EB /* GridViewConstraint.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A1C822B629200038F9EB /* Button Pad View */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1B222B60D540038F9EB /* ButtonPadView.h */,
+				43B1A1B322B60D540038F9EB /* ButtonPadView.m */,
+				43B1A1CA22B629370038F9EB /* Private Helper Classes */,
+			);
+			path = "Button Pad View";
+			sourceTree = "<group>";
+		};
+		43B1A1C922B629290038F9EB /* View Layer */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1F822C04EAF0038F9EB /* Categories */,
+				43B1A1F922C04F0C0038F9EB /* Views */,
+				43B1A20322C053FA0038F9EB /* View Controllers */,
+				43B1A21322CC578D0038F9EB /* Themes */,
+				43B1A17122A367D10038F9EB /* Supporting Files */,
+			);
+			path = "View Layer";
+			sourceTree = "<group>";
+		};
+		43B1A1CA22B629370038F9EB /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1DA22B6EA990038F9EB /* ButtonPadGridConfiguration.h */,
+				43B1A1DB22B6EA990038F9EB /* ButtonPadGridConfiguration.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A1D122B62C660038F9EB /* Display View */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1CC22B62BAD0038F9EB /* DisplayView.h */,
+				43B1A1CD22B62BAD0038F9EB /* DisplayView.m */,
+			);
+			path = "Display View";
+			sourceTree = "<group>";
+		};
+		43B1A1DD22B6ED160038F9EB /* Concrete Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A20022C0521C0038F9EB /* ConcreteCalculatorViewModel.h */,
+				43B1A20122C0521C0038F9EB /* ConcreteCalculatorViewModel.m */,
+				43B1A1E622B6F4860038F9EB /* ConcreteDisplayViewModel.h */,
+				43B1A1E722B6F4860038F9EB /* ConcreteDisplayViewModel.m */,
+				43B1A1D422B6D8250038F9EB /* ConcreteButtonPadViewModel.h */,
+				43B1A1D522B6D8250038F9EB /* ConcreteButtonPadViewModel.m */,
+				43B1A1DF22B6EEA80038F9EB /* ConcreteButtonViewModel.h */,
+				43B1A1E022B6EEA80038F9EB /* ConcreteButtonViewModel.m */,
+			);
+			path = "Concrete Implementations";
+			sourceTree = "<group>";
+		};
+		43B1A1DE22B6ED2D0038F9EB /* View Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A17322A367F70038F9EB /* Protocols */,
+				43B1A1DD22B6ED160038F9EB /* Concrete Implementations */,
+			);
+			path = "View Model Layer";
+			sourceTree = "<group>";
+		};
+		43B1A1E922B7036F0038F9EB /* Button View */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1C122B622A90038F9EB /* ConcreteButtonView.h */,
+				43B1A1C222B622A90038F9EB /* ConcreteButtonView.m */,
+				43B1A25622CEA24C0038F9EB /* Private Helper Classes */,
+			);
+			path = "Button View";
+			sourceTree = "<group>";
+		};
+		43B1A1F622C044FD0038F9EB /* Button View Model */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1D322B6D7040038F9EB /* ButtonViewModel.h */,
+				43B1A1F322C044930038F9EB /* ButtonViewModelStyle.h */,
+				43B1A1F422C044930038F9EB /* ButtonViewModelStyle.m */,
+			);
+			path = "Button View Model";
+			sourceTree = "<group>";
+		};
+		43B1A1F822C04EAF0038F9EB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1ED22BA01120038F9EB /* UIView+CalculatorViewAdditions.h */,
+				43B1A1EE22BA01120038F9EB /* UIView+CalculatorViewAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		43B1A1F922C04F0C0038F9EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A20722C05ED90038F9EB /* Calculator View */,
+				43B1A1D122B62C660038F9EB /* Display View */,
+				43B1A1C822B629200038F9EB /* Button Pad View */,
+				43B1A1E922B7036F0038F9EB /* Button View */,
+				43B1A1C522B6278E0038F9EB /* Grid View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43B1A1FB22C050A70038F9EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A140229C9C6C0038F9EB /* Calculator.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		43B1A1FC22C050C70038F9EB /* Concrete Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A1FD22C050DA0038F9EB /* Concrete Calculator */,
+				43B1A27E22CF18590038F9EB /* Logging Calculator */,
+			);
+			path = "Concrete Implementations";
+			sourceTree = "<group>";
+		};
+		43B1A1FD22C050DA0038F9EB /* Concrete Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A147229C9D1B0038F9EB /* ConcreteCalculator.h */,
+				43B1A148229C9D1B0038F9EB /* ConcreteCalculator.m */,
+				43B1A1FE22C050EC0038F9EB /* Private Helper Classes */,
+			);
+			path = "Concrete Calculator";
+			sourceTree = "<group>";
+		};
+		43B1A1FE22C050EC0038F9EB /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A29722D4597C0038F9EB /* Operand */,
+				43456FC82308D1CF00DFA21A /* Display Text */,
+				43B1A28322D286F50038F9EB /* ExpressionEvaluator.h */,
+				43B1A28422D286F50038F9EB /* ExpressionEvaluator.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A20322C053FA0038F9EB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A11F229C9C400038F9EB /* CalculatorViewController.h */,
+				43B1A120229C9C400038F9EB /* CalculatorViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		43B1A20722C05ED90038F9EB /* Calculator View */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A20422C05ED50038F9EB /* CalculatorView.h */,
+				43B1A20522C05ED50038F9EB /* CalculatorView.m */,
+			);
+			path = "Calculator View";
+			sourceTree = "<group>";
+		};
+		43B1A21322CC578D0038F9EB /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A25C22CEB7EC0038F9EB /* Protocols */,
+				43B1A25D22CEB7F30038F9EB /* Concrete Implementations */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		43B1A25622CEA24C0038F9EB /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A25322CEA2490038F9EB /* HighlightingButton.h */,
+				43B1A25422CEA2490038F9EB /* HighlightingButton.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A25C22CEB7EC0038F9EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A21222CC53E30038F9EB /* CalculatorViewTheme.h */,
+				43B1A20E22C96B680038F9EB /* DisplayViewTheme.h */,
+				43B1A20D22C9576C0038F9EB /* ButtonPadViewTheme.h */,
+				43B1A25822CEADE10038F9EB /* ButtonViewThemeProviding.h */,
+				43B1A20822C1BFAA0038F9EB /* ButtonViewTheme.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		43B1A25D22CEB7F30038F9EB /* Concrete Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A20F22CC53C00038F9EB /* ConcreteCalculatorViewTheme.h */,
+				43B1A21022CC53C00038F9EB /* ConcreteCalculatorViewTheme.m */,
+				43B1A21422CC58560038F9EB /* ConcreteDisplayViewTheme.h */,
+				43B1A21522CC58560038F9EB /* ConcreteDisplayViewTheme.m */,
+				43B1A21722CC58B20038F9EB /* ConcreteButtonPadViewTheme.h */,
+				43B1A21822CC58B20038F9EB /* ConcreteButtonPadViewTheme.m */,
+				43B1A25E22CEB9630038F9EB /* ConcreteButtonViewThemeProvider.h */,
+				43B1A25F22CEB9630038F9EB /* ConcreteButtonViewThemeProvider.m */,
+				43B1A24A22CC6C6F0038F9EB /* ConcreteButtonViewTheme.h */,
+				43B1A24B22CC6C6F0038F9EB /* ConcreteButtonViewTheme.m */,
+			);
+			path = "Concrete Implementations";
+			sourceTree = "<group>";
+		};
+		43B1A26122CEC0720038F9EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A137229C9C410038F9EB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B1A26222CEC0840038F9EB /* Concrete Calculator Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A16C22A2FF9B0038F9EB /* Abstract Test Superclass */,
+				43B1A16D22A2FFA50038F9EB /* Concrete Test Subclasses */,
+			);
+			path = "Concrete Calculator Tests";
+			sourceTree = "<group>";
+		};
+		43B1A26322CEC08E0038F9EB /* View Model Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A27222CED0370038F9EB /* Mocks */,
+				43B1A26422CEC0A10038F9EB /* ConcreteButtonPadViewModelTests.m */,
+			);
+			path = "View Model Layer Tests";
+			sourceTree = "<group>";
+		};
+		43B1A27222CED0370038F9EB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A26622CEC1120038F9EB /* MockCalculator.h */,
+				43B1A26722CEC1120038F9EB /* MockCalculator.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		43B1A27322CED0E50038F9EB /* Shared Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A27822CED3550038F9EB /* Object Communication Tester */,
+			);
+			path = "Shared Infrastructure";
+			sourceTree = "<group>";
+		};
+		43B1A27722CED34D0038F9EB /* Private Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A26922CEC9B10038F9EB /* ExpectationTable.h */,
+				43B1A26A22CEC9B10038F9EB /* ExpectationTable.m */,
+				43B1A26F22CECE930038F9EB /* ExpectationTableKey.h */,
+				43B1A27022CECE930038F9EB /* ExpectationTableKey.m */,
+			);
+			path = "Private Helper Classes";
+			sourceTree = "<group>";
+		};
+		43B1A27822CED3550038F9EB /* Object Communication Tester */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A27422CED1AC0038F9EB /* ObjectCommunicationTester.h */,
+				43B1A27522CED1AC0038F9EB /* ObjectCommunicationTester.m */,
+				43B1A27722CED34D0038F9EB /* Private Helper Classes */,
+			);
+			path = "Object Communication Tester";
+			sourceTree = "<group>";
+		};
+		43B1A27E22CF18590038F9EB /* Logging Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A27B22CF18540038F9EB /* LoggingCalculator.h */,
+				43B1A27C22CF18540038F9EB /* LoggingCalculator.m */,
+			);
+			path = "Logging Calculator";
+			sourceTree = "<group>";
+		};
+		43B1A28622D2B80B0038F9EB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A25022CE90610038F9EB /* FloatComparison.h */,
+				43B1A27F22D1715B0038F9EB /* Equality.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		43B1A28A22D2B83D0038F9EB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A28722D2B8390038F9EB /* NSString+CalculatorTestAdditions.h */,
+				43B1A28822D2B8390038F9EB /* NSString+CalculatorTestAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		43B1A29722D4597C0038F9EB /* Operand */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A16E22A314580038F9EB /* Operand.h */,
+				43B1A16F22A314580038F9EB /* Operand.m */,
+				43B1A29122D456C30038F9EB /* NSDecimalNumber+OperandAdditions.h */,
+				43B1A29222D456C30038F9EB /* NSDecimalNumber+OperandAdditions.m */,
+			);
+			path = Operand;
+			sourceTree = "<group>";
+		};
+		43F1BC8A22D5A7F500C6CED5 /* Display Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A15E22A2FD930038F9EB /* ConcreteCalculatorDisplayTests.m */,
+				43F1BC8822D5A7A600C6CED5 /* ConcreteCalculatorUSEnglishTests.m */,
+				43F1BC8B22D5A83D00C6CED5 /* ConcreteCalculatorFranceFrenchTests.m */,
+			);
+			path = "Display Tests";
+			sourceTree = "<group>";
+		};
+		43F1BC9022E4FB0300C6CED5 /* Math Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A14B229CAB970038F9EB /* ConcreteCalculatorAdditionTests.m */,
+				43B1A16422A2FF300038F9EB /* ConcreteCalculatorSubtractionTests.m */,
+				43B1A16622A2FF410038F9EB /* ConcreteCalculatorMultiplicationTests.m */,
+				43B1A16822A2FF500038F9EB /* ConcreteCalculatorDivisionTests.m */,
+				43B1A15522A2F4B10038F9EB /* ConcreteCalculatorNegationTests.m */,
+				43B1A16022A2FE370038F9EB /* ConcreteCalculatorDecimalTests.m */,
+				43B1A27922CF10350038F9EB /* ConcreteCalculatorMultiOperatorTests.m */,
+			);
+			path = "Math Tests";
+			sourceTree = "<group>";
+		};
+		43F1BC9122E4FB1600C6CED5 /* Other Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1A16222A2FE4D0038F9EB /* ConcreteCalculatorClearTests.m */,
+				43B1A15A22A2FB3A0038F9EB /* ConcreteCalculatorEqualsTests.m */,
+				43B1A15C22A2FBEA0038F9EB /* ConcreteCalculatorNumberEntryTests.m */,
+			);
+			path = "Other Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B1A118229C9C400038F9EB /* Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B1A13A229C9C410038F9EB /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildPhases = (
+				43B1A115229C9C400038F9EB /* Sources */,
+				43B1A116229C9C400038F9EB /* Frameworks */,
+				43B1A117229C9C400038F9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calculator;
+			productName = Calculator;
+			productReference = 43B1A119229C9C400038F9EB /* Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43B1A130229C9C410038F9EB /* CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B1A13D229C9C410038F9EB /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
+			buildPhases = (
+				43B1A12D229C9C410038F9EB /* Sources */,
+				43B1A12E229C9C410038F9EB /* Frameworks */,
+				43B1A12F229C9C410038F9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B1A133229C9C410038F9EB /* PBXTargetDependency */,
+			);
+			name = CalculatorTests;
+			productName = CalculatorTests;
+			productReference = 43B1A131229C9C410038F9EB /* CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B1A111229C9C400038F9EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Raheel Merali";
+				TargetAttributes = {
+					43B1A118229C9C400038F9EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					43B1A130229C9C410038F9EB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 43B1A118229C9C400038F9EB;
+					};
+				};
+			};
+			buildConfigurationList = 43B1A114229C9C400038F9EB /* Build configuration list for PBXProject "Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B1A110229C9C400038F9EB;
+			productRefGroup = 43B1A11A229C9C400038F9EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B1A118229C9C400038F9EB /* Calculator */,
+				43B1A130229C9C410038F9EB /* CalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B1A117229C9C400038F9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B1A129229C9C410038F9EB /* LaunchScreen.storyboard in Resources */,
+				43B1A126229C9C410038F9EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B1A12F229C9C410038F9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B1A115229C9C400038F9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B1A121229C9C400038F9EB /* CalculatorViewController.m in Sources */,
+				43B1A1CE22B62BAD0038F9EB /* DisplayView.m in Sources */,
+				43B1A28222D282E00038F9EB /* DisplayText.m in Sources */,
+				43B1A1EF22BA01120038F9EB /* UIView+CalculatorViewAdditions.m in Sources */,
+				43B1A29322D456C30038F9EB /* NSDecimalNumber+OperandAdditions.m in Sources */,
+				43B1A21622CC58560038F9EB /* ConcreteDisplayViewTheme.m in Sources */,
+				43456FC72308D1C600DFA21A /* OperandLocalizer.m in Sources */,
+				43B1A26022CEB9630038F9EB /* ConcreteButtonViewThemeProvider.m in Sources */,
+				43B1A1F522C044930038F9EB /* ButtonViewModelStyle.m in Sources */,
+				43B1A1AE22AE2AD70038F9EB /* GridView.m in Sources */,
+				43B1A20222C0521C0038F9EB /* ConcreteCalculatorViewModel.m in Sources */,
+				43B1A20622C05ED50038F9EB /* CalculatorView.m in Sources */,
+				43B1A24C22CC6C6F0038F9EB /* ConcreteButtonViewTheme.m in Sources */,
+				43B1A149229C9D1B0038F9EB /* ConcreteCalculator.m in Sources */,
+				43B1A25522CEA2490038F9EB /* HighlightingButton.m in Sources */,
+				43B1A1DC22B6EA990038F9EB /* ButtonPadGridConfiguration.m in Sources */,
+				43B1A1D022B62C3F0038F9EB /* ButtonPadView.m in Sources */,
+				43B1A21922CC58B20038F9EB /* ConcreteButtonPadViewTheme.m in Sources */,
+				43B1A1F222BA04E60038F9EB /* GridViewConstraint.m in Sources */,
+				43B1A21122CC53C00038F9EB /* ConcreteCalculatorViewTheme.m in Sources */,
+				43B1A1D622B6D8250038F9EB /* ConcreteButtonPadViewModel.m in Sources */,
+				43B1A1B122AE38F60038F9EB /* GridViewConstraintFactory.m in Sources */,
+				43B1A27D22CF18540038F9EB /* LoggingCalculator.m in Sources */,
+				43B1A28522D286F50038F9EB /* ExpressionEvaluator.m in Sources */,
+				43B1A1E122B6EEA80038F9EB /* ConcreteButtonViewModel.m in Sources */,
+				43456FCC2308D25000DFA21A /* OperandStringValues.m in Sources */,
+				43B1A1E822B6F4860038F9EB /* ConcreteDisplayViewModel.m in Sources */,
+				43B1A12C229C9C410038F9EB /* main.m in Sources */,
+				43B1A1C322B622A90038F9EB /* ConcreteButtonView.m in Sources */,
+				43B1A11E229C9C400038F9EB /* AppDelegate.m in Sources */,
+				43B1A17022A314580038F9EB /* Operand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B1A12D229C9C410038F9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B1A15D22A2FBEA0038F9EB /* ConcreteCalculatorNumberEntryTests.m in Sources */,
+				43B1A16122A2FE370038F9EB /* ConcreteCalculatorDecimalTests.m in Sources */,
+				43B1A15622A2F4B10038F9EB /* ConcreteCalculatorNegationTests.m in Sources */,
+				43B1A27622CED1AC0038F9EB /* ObjectCommunicationTester.m in Sources */,
+				43F1BC8F22DAA4DB00C6CED5 /* CalculatorExpectationFactory.m in Sources */,
+				43B1A17A22A4874F0038F9EB /* CalculatorInputFeeder.m in Sources */,
+				43B1A16922A2FF500038F9EB /* ConcreteCalculatorDivisionTests.m in Sources */,
+				43B1A15B22A2FB3A0038F9EB /* ConcreteCalculatorEqualsTests.m in Sources */,
+				43B1A154229E3E040038F9EB /* ConcreteCalculatorAbstractTests.m in Sources */,
+				43B1A26522CEC0A10038F9EB /* ConcreteButtonPadViewModelTests.m in Sources */,
+				43B1A14C229CAB970038F9EB /* ConcreteCalculatorAdditionTests.m in Sources */,
+				43B1A26B22CEC9B20038F9EB /* ExpectationTable.m in Sources */,
+				43B1A26822CEC1120038F9EB /* MockCalculator.m in Sources */,
+				43F1BC8922D5A7A600C6CED5 /* ConcreteCalculatorUSEnglishTests.m in Sources */,
+				43B1A15F22A2FD930038F9EB /* ConcreteCalculatorDisplayTests.m in Sources */,
+				43B1A27122CECE930038F9EB /* ExpectationTableKey.m in Sources */,
+				43B1A16722A2FF410038F9EB /* ConcreteCalculatorMultiplicationTests.m in Sources */,
+				43B1A16322A2FE4D0038F9EB /* ConcreteCalculatorClearTests.m in Sources */,
+				43F1BC8C22D5A83D00C6CED5 /* ConcreteCalculatorFranceFrenchTests.m in Sources */,
+				43B1A27A22CF10350038F9EB /* ConcreteCalculatorMultiOperatorTests.m in Sources */,
+				43B1A28922D2B8390038F9EB /* NSString+CalculatorTestAdditions.m in Sources */,
+				43B1A16522A2FF300038F9EB /* ConcreteCalculatorSubtractionTests.m in Sources */,
+				43B1A17622A4740E0038F9EB /* ConcreteCalculatorTestConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43B1A133229C9C410038F9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B1A118229C9C400038F9EB /* Calculator */;
+			targetProxy = 43B1A132229C9C410038F9EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43B1A127229C9C410038F9EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B1A128229C9C410038F9EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43B1A138229C9C410038F9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43B1A139229C9C410038F9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B1A13B229C9C410038F9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/View Layer/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raheel.Calculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43B1A13C229C9C410038F9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/View Layer/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raheel.Calculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43B1A13E229C9C410038F9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CalculatorTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raheel.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+			};
+			name = Debug;
+		};
+		43B1A13F229C9C410038F9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CalculatorTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raheel.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B1A114229C9C400038F9EB /* Build configuration list for PBXProject "Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B1A138229C9C410038F9EB /* Debug */,
+				43B1A139229C9C410038F9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B1A13A229C9C410038F9EB /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B1A13B229C9C410038F9EB /* Debug */,
+				43B1A13C229C9C410038F9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B1A13D229C9C410038F9EB /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B1A13E229C9C410038F9EB /* Debug */,
+				43B1A13F229C9C410038F9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B1A111229C9C400038F9EB /* Project object */;
+}
